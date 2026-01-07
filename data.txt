@@ -1,0 +1,9 @@
+16-08-2025|Expense|food|0|
+18-08-2025| Income|2|0|
+17-08-2025|Expense|fruits|0|
+18-08-2025|Income|ipo|0|
+18-08-2025|Expense|books|0|
+18-08-2025|Income|home|0|
+18-08-2025|Expense|friend|0|
+17-12-2025|Income|food|0|
+Income|stocks|imfebian avenues|500|17-12-2025
