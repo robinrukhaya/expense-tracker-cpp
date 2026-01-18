@@ -7,3 +7,4 @@
 18-08-2025|Expense|friend|0|
 17-12-2025|Income|food|0|
 Income|stocks|imfebian avenues|500|17-12-2025
+Expense|fruit|banana|50|18-01-2026
