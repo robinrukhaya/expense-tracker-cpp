@@ -1,48 +1,138 @@
-# Personal Expense Tracker (C++ OOP)
+# 💰 Personal Expense Tracker — C++ OOP
 
-A **simple, clean, object-oriented personal expense tracker** written in C++ to help you manage income, expenses, and monthly summaries. This project demonstrates **OOP principles** like encapsulation, getters/setters, modular code, and file handling.
+<p align="left">
+  <img src="https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Paradigm-OOP-7c6fff?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Storage-File%20Handling-00e5a0?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge"/>
+</p>
+
+> A clean, object-oriented CLI application to track your income and expenses — built entirely in C++ using core OOP principles.
 
 ---
 
-## 🛠 Features
+## 🎯 What This Project Does
 
-- Add **Income** and **Expense** transactions
-- View all transactions with details
-- Calculate **current balance** (Income - Expense)
-- Search transactions by **category** or **description**
-- Delete and edit existing transactions
-- Generate **monthly summary**
-- Export transactions to **CSV** for reporting
-- **Persistent storage**: transactions saved in `data.txt`
+Managing money is a real-world problem. This project solves it with a **terminal-based expense tracker** that lets you add transactions, check your balance, search by category, and export reports — all without touching a database or framework. Just pure C++.
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|--------|-------------|
+| ➕ Add Transactions | Log income or expense with amount, category & description |
+| 📋 View All | Display all transactions with full details |
+| 💵 Balance Check | Instantly calculate Income − Expenses |
+| 🔍 Search | Filter transactions by category or description |
+| ✏️ Edit & Delete | Modify or remove any existing transaction |
+| 📅 Monthly Summary | View a breakdown of spending by month |
+| 📤 CSV Export | Export all data to `transactions.csv` for Excel/Sheets |
+| 💾 Persistent Storage | All data saved to `data.txt` — survives program restarts |
 
 ---
 
 ## 📁 Project Structure
 
-| File | Description |
-|------|-------------|
-| `with_oop.cpp` | Main program / menu interface |
-| `ExpenseTracker.h` | Declaration of `ExpenseTracker` class |
-| `ExpenseTracker.cpp` | Definition of `ExpenseTracker` methods |
-| `Transaction.h` | Declaration of `Transaction` class |
-| `Transaction.cpp` | Definition of `Transaction` methods |
-| `.gitignore` | Prevents `.exe` files from being tracked |
+```
+expense-tracker-cpp/
+│
+├── with_oop.cpp          # Main program — menu & user interface
+├── ExpenseTracker.h      # ExpenseTracker class declaration
+├── ExpenseTracker.cpp    # ExpenseTracker class methods
+├── Transaction.h         # Transaction class declaration
+├── Transaction.cpp       # Transaction class methods
+├── data.txt              # Persistent storage file (auto-created)
+├── transactions.csv      # Exported CSV report
+└── .gitignore            # Ignores compiled .exe files
+```
 
 ---
 
-## 💡 Key Concepts
+## 💡 OOP Concepts Demonstrated
 
-- **Classes & Objects:** `Transaction` and `ExpenseTracker`  
-- **Getters and Setters:** Access and modify private data safely  
-- **File Handling:** Read/write transactions from `data.txt`  
-- **Vectors:** Store dynamic list of transactions  
-- **OOP Principles:** Encapsulation, modularity, clean structure  
+This project was built to practice and showcase real Object-Oriented Programming:
+
+- **Encapsulation** — Private data members accessed via getters/setters
+- **Classes & Objects** — `Transaction` and `ExpenseTracker` as separate classes
+- **Modularity** — Logic split across `.h` header and `.cpp` implementation files
+- **File Handling** — Read/write persistence using `fstream`
+- **Vectors (STL)** — Dynamic list management with `std::vector<Transaction>`
 
 ---
 
-## ⚡ Usage
+## ⚡ How to Run
 
-1. **Compile:**
+### Prerequisites
+- A C++ compiler (g++ recommended)
+- Terminal / Command Prompt
+
+### Steps
 
 ```bash
+# 1. Clone the repository
+git clone https://github.com/robinrukhaya/expense-tracker-cpp.git
+
+# 2. Navigate into the folder
+cd expense-tracker-cpp
+
+# 3. Compile all files
 g++ with_oop.cpp ExpenseTracker.cpp Transaction.cpp -o ExpenseTracker
+
+# 4. Run the program
+./ExpenseTracker        # Linux/Mac
+ExpenseTracker.exe      # Windows
+```
+
+---
+
+## 🖥️ Sample Menu
+
+```
+===== Personal Expense Tracker =====
+1. Add Transaction
+2. View All Transactions
+3. Check Balance
+4. Search by Category
+5. Edit Transaction
+6. Delete Transaction
+7. Monthly Summary
+8. Export to CSV
+9. Exit
+=====================================
+Enter your choice:
+```
+
+---
+
+## 🧠 What I Learned
+
+- Structuring a multi-file C++ project with header files
+- Implementing OOP from scratch without frameworks
+- File I/O for persistent data storage
+- Using STL vectors to manage dynamic data
+- Building a clean, user-friendly CLI interface
+
+---
+
+## 🔮 Future Improvements
+
+- [ ] Add date filtering for transactions
+- [ ] Add budget limit alerts
+- [ ] Build a GUI version using Qt
+- [ ] Add password protection for privacy
+
+---
+
+## 👨‍💻 Author
+
+**Robin Rukhaya**
+B.Tech CSE | IILM University | Aspiring SDE
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/robin-rukhaya-124a70348)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-100000?style=flat-square&logo=github)](https://github.com/robinrukhaya)
+[![LeetCode](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=flat-square&logo=leetcode&logoColor=black)](https://leetcode.com/u/RobinRukhaya/)
+
+---
+
+> *"First, solve the problem. Then, write the code."*
